@@ -1,0 +1,115 @@
+@import url(https://fonts.google.com/specimen/Montserrat);
+@import url(https://fonts.google.com/specimen/Fraunces);
+
+
+:root{
+    --darkcyan:hsl(158, 36%, 37%);
+    --cream:hsl(30, 38%, 92%);
+    --Verydarkblue: hsl(212, 21%, 14%);
+--Darkgrayishblue: hsl(228, 12%, 48%);
+--White:hsl(0, 0%, 100%);
+--moniserrat: "Montserrat", sans-serif;
+--fraunces:"Fraunces", serif;
+--fontsize: 14px;
+--Mobile: 375px;
+--Desktop: 1440px;
+
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    height: 100%;
+}
+body{
+    width: 100%;
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 600px;
+    height: 447px;
+    background-color: var(--White);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:28px
+
+}
+.card .card-image img{
+    width:297px;
+    height:100%;
+    border-top-left-radius:10px;
+    border-bottom-left-radius: 10px;
+
+}
+.card-details{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-right: 28px;
+    height: auto;
+
+}
+.card-details h3{
+    color: var(--Darkgrayishblue);
+    font-family:"Montserrat", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+.card-details h1{
+    color: var(--Verydarkblue);
+    font-family: var(--fraunces);
+}
+.card-details p{
+    color:var(--Darkgrayishblue);
+    font-family: var(--moniserrat);
+    font-size: var(--fontsize);
+    font-weight: 500;
+}
+.card-currency{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+}
+.card-currency h1{
+    color: var(--darkcyan);
+}
+.card-currency small{
+    text-decoration: line-through;
+    color: var(--Darkgrayishblue);
+}
+.card .cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--darkcyan);
+    width: 100%;
+    height: 47px;
+    border-radius: 10px;
+    padding: 1rem;
+    gap: 10px;
+    color: var(--White);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.cart p{
+    color: var(--White);
+}
+.cart:hover{
+    background-color: var(--Verydarkblue);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
